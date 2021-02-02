@@ -143,6 +143,7 @@ label[for='read'] {
 }
 
 button {
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 19px;
     background-color: rgb(237, 244, 248);
     border: 1px solid rgb(63, 63, 63);
