@@ -29,7 +29,7 @@ Book.prototype.info = function(){
 
 // books already in library
 let hobbit = new Book('The Hobbit', 'J.R.R Tolkien', 298, false);
-let secondBook = new Book('a title', 'an author', 28, true);
+let secondBook = new Book('a dummy title', 'an author', 258, true);
 let myLibrary = [hobbit, secondBook];
 for (let i = 0; i < myLibrary.length; i++) {
     myLibrary[i].index = i;
