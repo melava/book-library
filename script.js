@@ -14,17 +14,19 @@ const inputs = document.querySelectorAll('input');
 
 /* ------------------------ OBJECT ------------------------ */
 // Book object constructor
-function Book(title, author, pages,read) {
-    this.title = title,
-    this.author = author,
-    this.length = pages,
-    this.read = read,
-    this.index
-}
+class Book {
+    constructor(title, author, pages,read) {
+        this.title = title,
+        this.author = author,
+        this.length = pages,
+        this.read = read,
+        this.index
+    }
 
-Book.prototype.info = function(){
-    let info = [`${this.title}`, `by ${this.author}`, `${this.length} pages`, `${this.read ? 'read' : 'not read yet'}`];
-    return info
+    info() {
+        let info = [`${this.title}`, `by ${this.author}`, `${this.length} pages`, `${this.read ? 'read' : 'not read yet'}`];
+        return info
+    }
 }
 
 // books already in library
